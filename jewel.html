@@ -1,0 +1,245 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Royal Sparkle Jewels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: ;
+      color: #2c2c2c;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Header Logo */
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background-color: #edc3e1ff;
+    }
+
+    .header img {
+      height: 90px;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 80vh;
+      overflow: hidden;
+      background-color: #fdc2d5ff;
+    }
+
+    .hero video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.7);
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .hero-text h1 {
+      font-family: 'Parisienne', cursive;
+      font-size: 4rem;
+      margin: 0;
+    }
+
+    .hero-text p {
+      font-size: 1.7rem;
+      margin: 15px 0;
+    }
+
+    .btn {
+      background-color: #d4af37;
+      color: black;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    /* Gallery Section */
+    .gallery {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #fffdf8;
+    }
+
+    .gallery h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 80px;
+    }
+
+    .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px;
+    }
+
+    .gallery-grid img {
+      width: 400px;
+      border-radius: 100px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: all 0.4s ease;
+      filter: grayscale(20%);
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+      filter: grayscale(0%) brightness(1.1);
+    }
+
+    /* Video Section */
+    .video-section {
+      background-color: #fdf3e7;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .video-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.3rem;
+      margin-bottom: 25px;
+    }
+
+    .video-section iframe {
+      width: 90%;
+      max-width: 800px;
+      height: 450px;
+      border-radius: 15px;
+      border: none;
+      
+    }
+
+    /* Contact */
+    .contact {
+      background-color: #d3b7c2ff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .contact button {
+      padding: 12px;
+      background-color: #d4af37;
+      color: black;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    /* WhatsApp Floating */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 768px) {
+      .hero-text h1 { font-size: 2.8rem; }
+      .hero-text p { font-size: 1rem; }
+      .gallery-grid img { width: 90%; }
+      .video-section iframe { height: 250px; }
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <video autoplay muted loop>
+      <source src="" type="video/mp4">
+    </video>
+    <div class="hero-text">
+      <h1>Royal Sparkle Jewels</h1>
+      <p>Where Beauty Meets Craftsmanship</p>
+      <a href="#gallery" class="btn">Explore Collection</a>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <h2>Our Signature Collection</h2>
+    <div class="gallery-grid">
+      <img src="C:\Users\hplsp\OneDrive\Documents\Web development\pic\istockphoto-108222426-2048x2048.jpg" alt="Ring">
+      <img src="C:\Users\hplsp\Downloads\close-up-smiling-pretty-lady-posing-while-demonstrating-designer-jewelry-beauty-concept.jpg" alt="Earrings">
+      <img src="C:\Users\hplsp\OneDrive\Documents\Web development\pic\istockphoto-934245408-2048x2048.jpg" alt="Necklace">
+      <img src="C:\Users\hplsp\OneDrive\Documents\Web development\pic\istockphoto-2076187680-612x612.jpg" alt="Bracelet">
+      <img src="C:\Users\hplsp\OneDrive\Documents\Web development\pic\istockphoto-2169672039-612x612.jpg" alt="anklets">
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <h2>Behind The Sparkle</h2>
+    <iframe src= "C:\Users\hplsp\OneDrive\Documents\Web development\pic\large.mp4"
+      allow="autoplay:encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- WhatsApp Button -->
+  <a class="whatsapp" href="https://wa.me/919876543210" target="_blank">💬 Chat on WhatsApp</a>
+
+</body>
+</html>
